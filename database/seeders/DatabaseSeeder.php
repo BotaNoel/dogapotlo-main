@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
         User::factory(48)->create();
 
         Book::factory(100)->create();
+
+        
     }
 }

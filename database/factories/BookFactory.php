@@ -19,7 +19,10 @@ class BookFactory extends Factory
         return [
             'title' => $this->faker->randomElement([
                 'Konyv1', 'Konyv2', 'Konyv3', 'Konyv4', 'Konyv5', 'Konyv6', 'Konyv7', 'Konyv8', 'Konyv9', 'Konyv10'
-            ])
+            ]),
+            'author' => fake()->name(),
+            'publication_year' => $this->faker->numberBetween(327, 2025),
+            'available_copies' => $this->faker->numberBetween(1, 1000000)
         ];
     }
 }
